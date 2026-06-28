@@ -22,3 +22,8 @@ Days - 3
 Days - 4 
     - learn about Request Body with Pydantic
     
+Days - 5
+    - Pydantic Field Validation
+    - create custom validation messages for Pydantic
+    
+    
