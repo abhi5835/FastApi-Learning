@@ -18,3 +18,7 @@ Days - 3
     - learn about Query Parameters
     - learn how to define query parameters
     - learn how to access query parameters
+
+Days - 4 
+    - learn about Request Body with Pydantic
+    
