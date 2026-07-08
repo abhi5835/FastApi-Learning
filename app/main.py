@@ -1,4 +1,4 @@
-from app.routers import get_api,path_api,query_api,body_api
+from app.routers import get_api,path_api,query_api,body_api,curd_api
 from fastapi import FastAPI, APIRouter
 
 app = FastAPI()
@@ -16,3 +16,6 @@ app.include_router(query_api.router)
 
 # Request Body with router
 app.include_router(body_api.router)
+
+# CRUD APIs with router
+app.include_router(curd_api.router)
