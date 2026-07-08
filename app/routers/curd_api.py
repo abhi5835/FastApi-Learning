@@ -22,7 +22,7 @@ async def create_user(user: User):
         "data": user
     }
 
-# GET All Users
+# GET All Users API
 @router.get("/")
 async def get_all_users():
     return {
