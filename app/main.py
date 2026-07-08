@@ -1,35 +1,12 @@
-from fastapi import FastAPI
+from app.routers import get_api,path_api
+from fastapi import FastAPI, APIRouter
 
 app = FastAPI()
 
+router = APIRouter()
 
-@app.get("/")
-async def home():
-    return {
-        "message": "Welcome to FastAPI 🚀",
-    }
+# GET API with router
+app.include_router(get_api.router)
 
-
-@app.get("/about")
-async def about():
-    return {
-        "name": "Abhishek Kumar",
-        "role": "Backend Developer",
-        "age": 28,
-        "address": {
-            "city": "Chapra",
-            "state": "Bihar",
-            "country": "India",
-            "pin-code": "841301"
-        },
-        "skills": ["Python", "FastAPI", "SQL", "Git", "Docker"]
-    }
-
-@app.get("/contact")
-async def contact():
-    return {
-        "email": "abhishek01@gmail.com",
-        "phone": "+91-9876543210",
-    }
-
-        
+# path parameters with router
+app.include_router(path_api.router)
