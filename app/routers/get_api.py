@@ -6,7 +6,10 @@
 
 from fastapi import APIRouter
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/get",
+    tags=["GET API"]
+)
 
 
 @router.get("/")

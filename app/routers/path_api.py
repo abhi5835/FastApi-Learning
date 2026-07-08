@@ -22,7 +22,10 @@
 
 from fastapi import APIRouter
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/path",
+    tags=["Path Parameters"]
+)
 
 # Example 1 :- @router.get("/users/{user_id}")
 @router.get("/users/{user_id}")

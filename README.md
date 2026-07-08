@@ -8,3 +8,13 @@ Day - 1
     - learn about asynchronous function that handles requests to this endpoint.
     - test API on web and also automatically generated Swagger UI.
     
+Days - 2 
+    - Learn about Path Parameters
+    - learn how to define path parameters
+    - learn how to access path parameters
+    - learn about routers
+    
+Days - 3
+    - learn about Query Parameters
+    - learn how to define query parameters
+    - learn how to access query parameters
